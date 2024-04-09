@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eaeaea;
+    margin: 0;
+    padding: 0;
+}
+.centered-box {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 60%;
+    text-align: center;
+}
+.content-text {
+    color: #444;
+    margin: 10px 0;
+}
+.section {
+    margin-bottom: 20px;
+}
+#header, #footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+#socialLinks ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+#socialLinks li {
+    display: inline;
+    margin: 0 10px;
+}
+#socialLinks a {
+    color: #007bff;
+    text-decoration: none;
+}
+#socialLinks a:hover {
+    text-decoration: underline;
+}
+.fa-brands {
+    font-size: 24px;
+}
+.instagram-btn {
+    display: inline-block;
+    background-color: #E1306C;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.sections-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+#theatre {
+    background-color: #FFD700;
+}
+#singing {
+    background-color: #FF69B4;
+}
+#communityService {
+    background-color: #7FFFD4;
+}
+.section i {
+    margin-right: 8px;
+}
+@media (max-width: 960px) {
+    .centered-box, .sections-container .section {
+        width: 80%;
+    }
+    .sections-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .section {
+        width: 45%;
+    }
+}
+@media (max-width: 720px) {
+    .centered-box, .sections-container .section {
+        width: 90%;
+    }
+    .section {
+        width: 100%;
+    }
+    #socialLinks li {
+        display: block;
+        margin: 10px auto;
+    }
+}
+@media (max-width: 540px) {
+    .instagram-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .content-text {
+        font-size: 14px;
+    }
+}
+.image-container img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
